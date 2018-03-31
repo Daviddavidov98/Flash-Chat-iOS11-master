@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-UltraLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fdd-rp-BoG">
+            <objects>
+                <viewController id="zxY-wY-Fxc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUw-9h-hui">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-Zp-olv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25f-cu-Ozc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egg" translatesAutoresizingMaskIntoConstraints="NO" id="kc0-ef-b4J">
+                                <rect key="frame" x="104.5" y="250.5" width="166" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="3zG-5N-pSK"/>
+                                    <constraint firstAttribute="width" constant="166" id="P7u-te-cUQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPl-yH-beZ">
+                                <rect key="frame" x="0.0" y="441" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kc0-ef-b4J" firstAttribute="centerY" secondItem="bUw-9h-hui" secondAttribute="centerY" id="7vB-vi-Ms5"/>
+                            <constraint firstItem="25f-cu-Ozc" firstAttribute="trailing" secondItem="xIh-dz-T6v" secondAttribute="trailing" id="C8O-ER-Omc"/>
+                            <constraint firstItem="dQf-Zp-olv" firstAttribute="leading" secondItem="xIh-dz-T6v" secondAttribute="leading" id="EHQ-jE-fTE"/>
+                            <constraint firstItem="25f-cu-Ozc" firstAttribute="leading" secondItem="xIh-dz-T6v" secondAttribute="leading" id="NPi-Yu-xbY"/>
+                            <constraint firstItem="kc0-ef-b4J" firstAttribute="centerX" secondItem="bUw-9h-hui" secondAttribute="centerX" id="PFC-cQ-dBu"/>
+                            <constraint firstItem="25f-cu-Ozc" firstAttribute="top" secondItem="bUw-9h-hui" secondAttribute="top" id="Pau-5Z-2yT"/>
+                            <constraint firstItem="dQf-Zp-olv" firstAttribute="top" secondItem="bUw-9h-hui" secondAttribute="top" id="Uu9-9k-A7n"/>
+                            <constraint firstItem="25f-cu-Ozc" firstAttribute="bottom" secondItem="xIh-dz-T6v" secondAttribute="bottom" id="ZlR-HH-Omc"/>
+                            <constraint firstItem="DPl-yH-beZ" firstAttribute="top" secondItem="xIh-dz-T6v" secondAttribute="top" constant="421" id="f6P-VQ-OsR"/>
+                            <constraint firstItem="DPl-yH-beZ" firstAttribute="trailing" secondItem="xIh-dz-T6v" secondAttribute="trailing" id="jBE-70-b0R"/>
+                            <constraint firstItem="DPl-yH-beZ" firstAttribute="leading" secondItem="xIh-dz-T6v" secondAttribute="leading" id="jkY-aC-FG6"/>
+                            <constraint firstItem="dQf-Zp-olv" firstAttribute="trailing" secondItem="xIh-dz-T6v" secondAttribute="trailing" id="jmO-C1-hem"/>
+                            <constraint firstItem="dQf-Zp-olv" firstAttribute="bottom" secondItem="xIh-dz-T6v" secondAttribute="bottom" id="tNf-ba-h49"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xIh-dz-T6v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tng-4W-Hqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234.78260869565219" y="130.43478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="egg" width="250" height="250"/>
+        <image name="load" width="640" height="1136"/>
+    </resources>
+</document>
